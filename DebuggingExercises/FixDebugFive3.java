@@ -11,7 +11,7 @@ public class FixDebugFive3
    {
       int item;
       String output;
-      final int LOW = 11111;
+      final int LOW = 111;
       final int HIGH = 999;
       final int CUTOFF = 500;
       Scanner input = new Scanner(System.in);
@@ -21,9 +21,9 @@ public class FixDebugFive3
          output = "Item number too low";
       else
         if(item >= HIGH)
-          output = "Item number too low";
+          output = "Item number too high";
         else
-          if(item >= HIGH)
+          if(item <= CUTOFF)
               output = "Valid - in Automotive Department";
           else
              output = "Valid - Item in Housewares Department";
